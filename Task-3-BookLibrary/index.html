@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Library</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mediaquery.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+
+
+
+    <nav>
+
+        <div class="navbar">
+
+            <h1>Books Library</h1>
+
+            <div class="categories">
+
+                <h1>Categories</h1>
+                <p><a href="index.html">All Books</a></p>
+                <p><a href="novel.html">Novel</a></p>
+                <p><a href="programming.html">Programming</a></p>
+                <p><a href="history.html">History</a></p>
+                <p><a href="poetry.html">Poetry</a></p>
+    
+            </div>
+
+            <div class="social">
+
+                <p>Contact Us</p>
+
+                <p><a href="#footer">For Query Click Here !!</a></p>
+
+            </div>
+
+        </div>
+
+        <section class="right-section">
+
+            <div class="heading">
+
+                <div class="heading-2">
+                    <input type="text" placeholder="Search Books" id="searchInput" onkeyup="searching()">
+
+                    <a href="addtocart.html">Borrow History</a>
+                </div>
+
+                
+    
+                
+
+                <h2>All Books</h2>
+    
+            </div>
+
+            <div class="books" id="book-list">
+
+                <div class="bookimg" id="book1">
+
+                    <img src="assests/images/booksbuy/1.jpg" alt="">
+                    <p>Code: The Hidden Language of Computer Hardware and Software</p>
+                    <button onclick="borrowBook('book1')">Add</button>
+
+                </div>
+
+                <div class="bookimg" id="book2">
+
+                    <img src="assests/images/booksbuy/2.jpg" alt="">
+                    <p>Design Patterns: Elements of Reusable Object-Oriented Software
+                    </p>
+                    <button onclick="borrowBook('book2')">Add</button>
+
+                </div>
+
+                <div class="bookimg" id="list3">
+
+                    <img src="assests/images/booksbuy/3.jpg" alt="">
+                    <p>Clean Code</p>
+                    <button onclick="borrowBook('book3')">Add</button>
+
+                </div>
+
+                <div class="bookimg" id="list4">
+
+                    <img src="assests/images/booksbuy/4.jpg" alt="">
+                    <p>The Pragmatic Programmer</p>
+                    <button onclick="borrowBook('book4')">Add</button>
+
+                </div>
+
+                <div class="bookimg" id="list5">
+
+                    <img src="assests/images/booksbuy/5.jpg" alt="">
+                    <p>The Diary of a Young Girl</p>
+                    <button onclick="borrowBook('book2')">Add</button>
+
+                </div>
+
+                <div class="bookimg" id="list6">
+
+                    <img src="assests/images/booksbuy/6.jpg" alt="">
+                    <p>The Alchemist</p>
+                    <button onclick="borrowBook('book2')">Add</button>
+
+                </div>
+
+                <div class="bookimg" id="list7">
+
+                    <img src="assests/images/booksbuy/7.jpg" alt="">
+                    <p>The Great Gatsby</p>
+                    <button onclick="borrowBook('book2')">Add</button>
+
+                </div>
+
+                <div class="bookimg" id="list8">
+
+                    <img src="assests/images/booksbuy/8.png" alt="">
+                    <p>Milk and honey</p>
+                    <button onclick="borrowBook('book2')">Add</button>
+
+                </div>
+
+                <div class="bookimg" id="list9">
+
+                    <img src="assests/images/booksbuy/9.jpg" alt="">
+                    <p>The Art of Letting Go: Poetry for the Seekers</p>
+                    <button onclick="borrowBook('book2')">Add</button>
+
+                </div>
+
+                <div class="bookimg" id="list10">
+
+                    <img src="assests/images/booksbuy/10.jpg" alt="">
+                    <p>History of Modern India</p>
+                    <button onclick="borrowBook('book2')">Add</button>
+
+                </div>
+
+                <div class="bookimg" id="list11">
+
+                    <img src="assests/images/booksbuy/11.jpg" alt="">
+                    <p>Jail Diary of Bhagat Singh</p>
+                    <button onclick="borrowBook('book2')">Add</button>
+
+                </div>
+
+                <div class="bookimg" id="list12">
+
+                    <img src="assests/images/booksbuy/12.jpg" alt="">
+                    <p>Sapiens: A Brief History of Humankind</p>
+                    <button onclick="borrowBook('book2')">Add</button>
+
+                </div>
+
+            </div>
+    
+        </section>
+    </nav>
+
+    <footer id="footer">
+        <div class="contact-form">
+
+            <form action="index.html">
+                <input type="text" placeholder="Name">
+            <input type="email" placeholder="Email">
+            <input type="password" placeholder="Password">
+            <textarea placeholder="Message"></textarea>
+            <input type="submit" >
+            </form>
+
+            
+
+        </div>
+    </footer>
+
+    
+    <script src="action.js"></script>
+</body>
+</html>
